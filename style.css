@@ -1,0 +1,13 @@
+#togglebtn {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.side-bar {
+    width: 220px;
+    background-color: aquamarine;
+}
+
+.side-bar.collapsed {
+    width: 0px;
+}
