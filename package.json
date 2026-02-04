@@ -1,0 +1,29 @@
+{
+  "name": "amirthagit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "types": "modulejs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc main.ts && node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikrajasrc/amirthagit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/karthikrajasrc/amirthagit/issues"
+  },
+  "homepage": "https://github.com/karthikrajasrc/amirthagit#readme",
+  "devDependencies": {
+    "@types/node": "^25.2.0"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

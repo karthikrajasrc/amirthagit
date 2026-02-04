@@ -1,68 +1,14 @@
-const promise = new Promise((resolve, reject) => {
-    setTimeout(
-        () => {
-            reject();
-        }, 5000);
-})
-
-
-console.log(promise);
-
-
-promise
-    .then(() => {
-        console.log("operation Success");
-        console.log(promise);
-    })
-    .catch(
-        () => {
-            console.log("Operation Failed");
-            console.log(promise);
-        }
-    )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* let h1 = document.createElement("h1");
-h1.textContent = "Table of contents";
-document.body.append(h1); 
-
-
-
-let olist = ["1. Best Full Stack Development Project Ideas in 2025", "2. Conclusion", "3. Frequently Asked Questions"];
-
-olist.forEach(ols => {
-    const ol = document.createElement("ol");
-    ol.textContent = ols;
-    document.body.append(ol);
-});
-
-
-let ulist = ["E-Commerce Websit", "Online Learning App", "Social Media Platform", "Task Management Application", "Portfolio Website", "Gaming Application", "Quiz App", "Food Management Application"];
-
-ulist.forEach(uls => {
-    const ul = document.createElement("ul");
-    ul.textContent = uls;
-    document.body.append(ul);
-    ul.setAttribute("style", "color : red;");
-}); */
-
- 
-
-
-
-
+var promptSync = require("prompt-sync")();
+var printname = function (price, quantity, taxRate) {
+    if (price <= 0 || quantity <= 0 || taxRate <= 0) {
+        return "Enter a correct inputs!!";
+    }
+    else {
+        var totalPrice = (price * quantity) + (price * quantity * taxRate) / 100;
+        return totalPrice;
+    }
+};
+var price = Number(promptSync("Enter the price of the item: "));
+var quantity = Number(promptSync("Enter the Quantity's: "));
+var taxRate = Number(promptSync("Enter the tax rate in % : "));
+console.log(printname(price, quantity, taxRate));
